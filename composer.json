@@ -1,0 +1,22 @@
+{
+  "name": "github/calendar-example",
+  "description": "Calendar Event Plugin",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "require": {
+    "shopware/core": "*",
+    "shopware/storefront": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "WsCalendar\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "WsCalendar\\WsCalendar",
+    "label": {
+      "de-DE": "Kalender Event Plugin",
+      "en-GB": "Calendar event plugin"
+    }
+  }
+}

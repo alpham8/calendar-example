@@ -1,0 +1,20 @@
+<sw-page class="ws-calendar-detail">
+    <template slot="smart-bar-header">
+        <h2 v-if="customer">{{ customer.firstName }} {{ customer.lastName }}</h2>
+    </template>
+
+    <template slot="smart-bar-actions">
+        <sw-button variant="ghost" v-if="customer" @click="openCustomer">
+            {{ $tc('ws-calendar.detail.toolbar.customer') }}
+        </sw-button>
+        <sw-button-process variant="primary" @click="onSaveClicked">
+            {{ $tc('ws-calendar.detail.toolbar.saveButtonText') }}
+        </sw-button-process>
+    </template>
+
+    <template slot="content">
+        <sw-card v-if="cusotmer">
+            <sw-entity-single-select :label="$tc('ws-calendar.detail.group')" :entityCollection="calendarGroups" required></sw-entity-single-select>
+        </sw-card>
+    </template>
+</sw-page>

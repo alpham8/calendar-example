@@ -1,0 +1,41 @@
+{
+    "ws-calendar":  {
+        "general": {
+            "mainMenuItemGeneral": "calendar"
+        },
+
+        "title": "calendar groups",
+        "list": {
+            "columns":  {
+                "firstName": "first name",
+                "lastName": "last name",
+                "email": "E-Mail",
+                "groupName": "group",
+                "action": "Benutzer bearbeiten"
+            },
+            "sidebar": {
+                "refresh": "refresh",
+                "filter": "filter",
+                "filters": {
+                    "search": "search",
+                    "customer": "customer",
+                    "salesChannel": "Sales-Channel",
+                    "resetFilter": "reset filter"
+                }
+            }
+        },
+        "detail": {
+            "toolbar": {
+                "customer": "open cusotmer",
+                "saveButtonText": "save"
+            },
+            "content": {
+                "title": "content",
+                "group": "calendar group"
+            },
+            "error": {
+                "errorTitle": "An error occured during saving"
+            }
+        }
+    }
+}

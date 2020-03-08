@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+        <defaults autowire="true" autoconfigure="true" public="false" />
+        <service id="WsCalendar\Models\Definition\CalendarRoles">
+            <tag name="shopware.entity.definition" entity="ws_calendar_roles" />
+        </service>
+        <service id="WsCalendar\Models\Definition\CalendarGroupRoles">
+            <tag name="shopware.entity.definition" entity="ws_calendar_group_roles" />
+        </service>
+        <service id="WsCalendar\Models\Definition\CalendarGroups">
+            <tag name="shopware.entity.definition" entity="ws_calendar_groups" />
+        </service>
+        <service id="WsCalendar\Models\Definition\CalendarUserGroups">
+            <tag name="shopware.entity.definition" entity="ws_calendar_user_groups" />
+        </service>
+        <service id="WsCalendar\Models\Definition\CalendarEvents">
+            <tag name="shopware.entity.definition" entity="ws_calendar_events" />
+        </service>
+        <service id="WsCalendar\Models\Definition\CalendarEventsAcl">
+            <tag name="shopware.entity.definition" entity="ws_calendar_events_acl" />
+        </service>
+        <service id="WsCalendar\Models\Definition\CalendarEventsParticipant">
+            <tag name="shopware.entity.definition" entity="ws_calendar_events_participant" />
+        </service>
+        <service id="WsCalendar\Models\Definition\CalendarEventsCustomerMail">
+            <tag name="shopware.entity.definition" entity="ws_calendar_events_customer_mail" />
+        </service>
+    </services>
+</container>

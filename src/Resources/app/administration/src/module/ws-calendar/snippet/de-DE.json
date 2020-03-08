@@ -1,0 +1,41 @@
+{
+    "ws-calendar":  {
+        "general": {
+            "mainMenuItemGeneral": "Kalender"
+        },
+
+        "title": "Kalender Gruppen",
+        "list": {
+            "columns":  {
+                "firstName": "Vorname",
+                "lastName": "Nachname",
+                "email": "E-Mail",
+                "groupName": "Gruppe",
+                "action": "Benutzer bearbeiten"
+            },
+            "sidebar": {
+                "refresh": "Neuladen",
+                "filter": "Filter",
+                "filters": {
+                    "search": "Suche",
+                    "customer": "Kunde",
+                    "salesChannel": "Sales-Channel",
+                    "resetFilter": "Filter zurücksetzen"
+                }
+            }
+        },
+        "detail": {
+            "toolbar": {
+                "customer": "Kunden öffnen",
+                "saveButtonText": "speichern"
+            },
+            "content": {
+                "title": "Inhalt",
+                "group": "Kalendar Gruppe"
+            },
+            "error": {
+                "errorTitle": "Es ist ein Fehler beim Speichern aufgetreten"
+            }
+        }
+    }
+}
