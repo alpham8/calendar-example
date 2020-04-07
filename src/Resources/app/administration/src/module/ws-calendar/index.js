@@ -1,11 +1,15 @@
+import './ws-calendar-index';
+import './ws-calendar-detail';
 import deDE from './snippet/de-DE';
 import enGB from './snippet/en-GB';
 
 Shopware.Module.register('ws-calendar', {
-    color: '#ff3d58',
-    icon: 'default-shopping-paper-bag-product',
+    type: 'plugin',
+    name: 'WsCalendar',
     title: 'Kalendar',
     description: 'Verwalte die Kalender Berechtigungen hier',
+    color: '#ff3d58',
+    icon: 'default-shopping-paper-bag-product',
 
     snippets: {
         'de-DE': deDE,
